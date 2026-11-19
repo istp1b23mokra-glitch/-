@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Батько Ізраїлю - Давид Бен-Гуріон. Від ідейного проекту до його втілення</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .presentation { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .slide {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 40px;
+            margin-bottom: 30px;
+            page-break-after: always;
+        }
+        .slide-header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 3px solid #1a5f7a; }
+        .slide-title { font-size: 2.5em; color: #1a5f7a; font-weight: 700; margin-bottom: 10px; }
+        .slide-subtitle { font-size: 1.3em; color: #555; font-weight: 300; }
+        .author-info { text-align: center; font-size: 1.1em; color: #1a5f7a; font-weight: 500; margin-top: 20px; }
+        .content-section { margin-bottom: 25px; }
+        .content-title { font-size: 1.5em; color: #1a5f7a; margin-bottom: 15px; font-weight: 600; }
+        .content-text { font-size: 1.1em; line-height: 1.8; color: #444; text-align: justify; }
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffd600;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        .image-container { text-align: center; margin: 20px 0; }
+        .image-container img { max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .image-caption { font-size: 0.9em; color: #666; margin-top: 10px; font-style: italic; }
+        .two-column { display: flex; gap: 30px; margin: 20px 0; }
+        .column { flex: 1; }
+        .timeline { position: relative; padding-left: 40px; margin: 20px 0; }
+        .timeline::before { content: ''; position: absolute; left: 15px; top: 0; bottom: 0; width: 2px; background: #1a5f7a; }
+        .timeline-item {
+            position: relative;
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #1a5f7a;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 25px;
+            width: 12px;
+            height: 12px;
+            background: #1a5f7a;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .timeline-date { font-weight: 700; color: #1a5f7a; margin-bottom: 5px; }
+        .timeline-content { color: #444; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 1em; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #1a5f7a; color: white; font-weight: 600; }
+        tr:nth-child(even) { background: #f8f9fa; }
+        tr:hover { background: #e9ecef; }
+        .list-item { margin: 10px 0; padding-left: 20px; position: relative; }
+        .list-item::before { content: "•"; color: #1a5f7a; font-weight: bold; position: absolute; left: 0; }
+        .sources { font-size: 0.95em; }
+        .source-item { margin-bottom: 15px; padding-left: 20px; position: relative; }
+        .source-item::before {
+            content: counter(source-counter) ".";
+            counter-increment: source-counter;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            color: #1a5f7a;
+        }
+        .conclusion-title { text-align: center; font-size: 1.8em; color: #1a5f7a; margin: 30px 0; }
+        .quote {
+            font-style: italic;
+            color: #1a5f7a;
+            padding: 20px;
+            background: #fff8e1;
+            border-left: 5px solid #ffd600;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .quote-author { text-align: right; font-weight: 600; margin-top: 10px; }
+        .map-container { background: #f0f8ff; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        @media print {
+            .slide { page-break-after: always; box-shadow: none; padding: 20px; }
+            body { background: white; }
+        }
+        @media (max-width: 768px) {
+            .slide { padding: 20px; }
+            .slide-title { font-size: 1.8em; }
+            .two-column { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <!-- СЛАЙД 1: Титульний -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Батько Ізраїлю - Давид Бен-Гуріон</div>
+                <div class="slide-subtitle">Від ідейного проекту до його втілення</div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/David_Ben-Gurion_1948.jpg/800px-David_Ben-Gurion_1948.jpg" alt="Давид Бен-Гуріон">
+                <div class="image-caption">Давид Бен-Гуріон, перший прем'єр-міністр Ізраїлю</div>
+            </div>
+            <div class="author-info">
+                Виконавець: Клімович Олег<br>
+                Студент 4 курсу, групи Ist1-B23
+            </div>
+        </div>
+
+        <!-- СЛАЙД 2: Актуальність, мета, завдання -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Актуальність, мета та завдання дослідження</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">📌 Актуальність теми</div>
+                <div class="content-text">
+                    Давид Бен-Гуріон є однією з найвизначніших постатей у світовій історії XX століття. 
+                    Його роль у створенні держави Ізраїль та формуванні її політичної системи важко переоцінити. 
+                    Дослідження його життєвого шляху та політичної діяльності дозволяє зрозуміти процеси 
+                    національного відродження єврейського народу, особливості формування сучасного Близького Сходу 
+                    та вплив особистості на хід історії.
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">🎯 Мета дослідження</div>
+                <div class="content-text">
+                    Проаналізувати життєвий шлях і політичну діяльність Давида Бен-Гуріона як 
+                    засновника держави Ізраїль, від його ранніх ідейних пошуків до практичного втілення 
+                    мрії про власну державу.
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">✅ Завдання дослідження</div>
+                <div class="list-item">Дослідити біографію Давида Бен-Гуріона та основні етапи його життєвого шляху</div>
+                <div class="list-item">Проаналізувати політичні ідеї та погляди Бен-Гуріона</div>
+                <div class="list-item">Визначити роль Бен-Гуріона у створенні держави Ізраїль</div>
+                <div class="list-item">Дослідити державотворчу діяльність Бен-Гуріона як прем'єр-міністра</div>
+                <div class="list-item">Оцінити спадщину Давида Бен-Гуріона для сучасного Ізраїлю</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">📅 Хронологічні межі дослідження</div>
+                <div class="content-text">
+                    <strong>1886–1973 роки</strong> – від народження Давида Бен-Гуріона до його смерті, 
+                    охоплюючи всі ключові етапи його життя та політичної діяльності.
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/UN_Palestine_Partition_Plan_1947.svg/1024px-UN_Palestine_Partition_Plan_1947.svg.png" alt="Карта поділу Палестини 1947 року">
+                <div class="image-caption">Карта поділу Палестини за планом ООН (1947 рік)</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 3: Біографія -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Біографія Давида Бен-Гуріона</div>
+            </div>
+            <div class="two-column">
+                <div class="column">
+                    <div class="content-section">
+                        <div class="content-title">📜 Ранні роки</div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">1886 рік</div>
+                                <div class="timeline-content">Народився 16 жовтня в містечку Плонськ (Польща, тоді Російська імперія) в сім'ї єврейського адвоката</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">1904 рік</div>
+                                <div class="timeline-content">Емігрував до Османської Палестини, почав працювати сільськогосподарським робітником</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">1906 рік</div>
+                                <div class="timeline-content">Вступив до соціалістичної сіоністської партії «Поалей Ціон» («Робітники Сіону»)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content-section">
+                        <div class="content-title">🌍 Політична кар'єра</div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">1910 рік</div>
+                                <div class="timeline-content">Став редактором газети «Ахдут Хаавода» (Єдність праці)</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">1920 рік</div>
+                                <div class="timeline-content">Очолив профспілку «Гістадрут», яка стала потужною політичною силою</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">1930 рік</div>
+                                <div class="timeline-content">Співзасновник партії «МАПАЙ» (Робітнича партія Землі Ізраїлю)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/David_Ben-Gurion_1910s.jpg/640px-David_Ben-Gurion_1910s.jpg" alt="Давид Бен-Гуріон у молодості">
+                <div class="image-caption">Давид Бен-Гуріон у молодості (1910-ті роки)</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">💡 Цікавий факт</div>
+                <div class="highlight">
+                    Бен-Гуріон був переконаний, що євреї повинні стати «новою людиною» – 
+                    фізично міцними, незалежними, здатними захищати свою землю. 
+                    Він сам займався важкою фізичною працею та закликав інших до цього.
+                </div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 4: Політичні ідеї -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Політичні ідеї та діяльність</div>
+            </div>
+            <div class="two-column">
+                <div class="column">
+                    <div class="content-section">
+                        <div class="content-title">💭 Політичні ідеї</div>
+                        <div class="list-item">Сіонізм як національне відродження єврейського народу</div>
+                        <div class="list-item">Соціалізм та колективістські цінності в економіці</div>
+                        <div class="list-item">Створення єврейської держави через практичну роботу на землі</div>
+                        <div class="list-item">Віра у можливість мирного співіснування з арабами</div>
+                        <div class="list-item">Необхідність військової сили для захисту єврейських інтересів</div>
+                    </div>
+                    <div class="quote">
+                        «Ми повинні стати народом, як усі інші народи, 
+                        з власною мовою, культурою та державою»
+                        <div class="quote-author">– Давид Бен-Гуріон</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content-section">
+                        <div class="content-title">⚡ Політична діяльність</div>
+                        <div class="list-item">Керівництво профспілковим рухом «Гістадрут» (1920-1935)</div>
+                        <div class="list-item">Лідер Єврейського агентства для Палестини (1935-1948)</div>
+                        <div class="list-item">Координація імміграції євреїв до Палестини</div>
+                        <div class="list-item">Створення єврейських збройних формувань «Хагана»</div>
+                    </div>
+                    <div class="quote">
+                        «У нас є лише одна країна – це Земля Ізраїлю. 
+                        У нас є лише одна батьківщина – це Палестина»
+                        <div class="quote-author">– Давид Бен-Гуріон</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Ben-Gurion_with_IDF_soldiers_1948.jpg/800px-Ben-Gurion_with_IDF_soldiers_1948.jpg" alt="Бен-Гуріон з ізраїльськими солдатами">
+                <div class="image-caption">Давид Бен-Гуріон з солдатами Армії оборони Ізраїлю (1948 рік)</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 5: Державотворча діяльність -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Державотворча діяльність</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">🏛️ Ключові події на шляху до незалежності</div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1947 рік, 29 листопада</div>
+                        <div class="timeline-content">ООН ухвалила план поділу Палестини на єврейську та арабську держави (Резолюція 181)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1948 рік, 14 травня</div>
+                        <div class="timeline-content">Підписання Декларації про незалежність Ізраїлю. Бен-Гуріон став першим прем'єр-міністром</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1948–1949 роки</div>
+                        <div class="timeline-content">Війна за незалежність (Арабсько-ізраїльська війна). Перемога Ізраїлю та розширення території</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1949 рік</div>
+                        <div class="timeline-content">Вступ Ізраїлю до ООН. Міжнародне визнання нової держави</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">📊 Періоди прем'єрства Давида Бен-Гуріона</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Період</th>
+                            <th>Тривалість</th>
+                            <th>Основні досягнення</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Перший термін</td>
+                            <td>1948–1954</td>
+                            <td>Створення державних інститутів, прийом масової імміграції, війна за незалежність</td>
+                        </tr>
+                        <tr>
+                            <td>Другий термін</td>
+                            <td>1955–1963</td>
+                            <td>Економічне зростання, будівництво Національного водогону, розвиток освіти</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="map-container">
+                <div class="content-title">🗺️ Карта: Ізраїль у 1949 році після війни за незалежність</div>
+                <div class="image-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Israel_1949-1967_control_map.svg/800px-Israel_1949-1967_control_map.svg.png" alt="Карта Ізраїлю після війни за незалежність">
+                    <div class="image-caption">Кордони Ізраїлю після Війни за незалежність (1949 рік)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 6: Спадщина -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Спадщина Давида Бен-Гуріона</div>
+            </div>
+            <div class="two-column">
+                <div class="column">
+                    <div class="content-section">
+                        <div class="content-title">🌱 Вплив на Ізраїль</div>
+                        <div class="list-item">Створення сучасної ізраїльської держави та її політичної системи</div>
+                        <div class="list-item">Формування національної ідентичності ізраїльтян</div>
+                        <div class="list-item">Розвиток економіки та інфраструктури країни</div>
+                        <div class="list-item">Заснування багатьох державних інститутів та організацій</div>
+                        <div class="list-item">Сприяння масової імміграції євреїв з усього світу</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content-section">
+                        <div class="content-title">🏆 Пам'ять про Бен-Гуріона</div>
+                        <div class="list-item">Національний парк імені Давида Бен-Гуріона в Негеві</div>
+                        <div class="list-item">Університет імені Бен-Гуріона в Беер-Шеві</div>
+                        <div class="list-item">Меморіал і дослідний інститут його імені в Сде-Бокері</div>
+                        <div class="list-item">Портрети та пам'ятники в багатьох містах Ізраїлю</div>
+                        <div class="list-item">Вулиці, площі та установи, названі його іменем</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">📈 Діаграма: Економічне зростання Ізраїлю за часів Бен-Гуріона</div>
+                <div class="image-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Israel_GDP_per_capita_1950-1970.png/800px-Israel_GDP_per_capita_1950-1970.png" alt="Діаграма економічного зростання Ізраїлю">
+                    <div class="image-caption">Економічне зростання Ізраїлю у 1950-1970 роках</div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Ben-Gurion_Tomb_Sde_Boker.jpg/800px-Ben-Gurion_Tomb_Sde_Boker.jpg" alt="Могила Бен-Гуріона в Сде-Бокері">
+                <div class="image-caption">Могила Давида Бен-Гуріона в кібуці Сде-Бокер (Негев)</div>
+            </div>
+            <div class="highlight">
+                Давид Бен-Гуріон помер 1 грудня 1973 року в віці 87 років. 
+                Він заповів поховати себе в кібуці Сде-Бокер у пустелі Негев, 
+                символізуючи своє бачення розвитку Ізраїлю через освоєння невикористаних земель.
+            </div>
+        </div>
+
+        
+        <!-- СЛАЙД 7: Сіоністський рух до Бен-Гуріона -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Сіоністський рух до Бен-Гуріона</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">📜 Історичний контекст</div>
+                <div class="content-text">
+                    Сіоністський рух виник у кінці XIX століття як відповідь на зростаючий антисемітизм у Європі 
+                    та прагнення євреїв до національного відродження. Теодор Герцль, засновник політичного сіонізму, 
+                    сформулював ідею створення єврейської держави у своїй книзі "Єврейська держава" (1896 рік).
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">🌍 Перші сіоністські організації</div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1882 рік</div>
+                        <div class="timeline-content">Початок першої алії (імміграції євреїв до Палестини)</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1897 рік</div>
+                        <div class="timeline-content">Перший Сіоністський конгрес у Базелі, заснований Теодором Герцлем</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1903 рік</div>
+                        <div class="timeline-content">Відхилення Британським урядом плану створення єврейської держави в Уганді</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/First_Zionist_Congress_1897.jpg/800px-First_Zionist_Congress_1897.jpg" alt="Перший Сіоністський конгрес">
+                <div class="image-caption">Перший Сіоністський конгрес у Базелі (1897 рік)</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 8: Військова діяльність -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Військова діяльність та створення армії</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">⚔️ Створення єврейських збройних формувань</div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1920 рік</div>
+                        <div class="timeline-content">Створення "Хагани" – єврейської організації самооборони</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1941 рік</div>
+                        <div class="timeline-content">Створення "Пальмаху" – елітних ударних підрозділів Хагани</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1948 рік, 26 травня</div>
+                        <div class="timeline-content">Офіційне створення Армії оборони Ізраїлю (ЦАХАЛ)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Haganah_insignia.svg/400px-Haganah_insignia.svg.png" alt="Емблема Хагани">
+                <div class="image-caption">Емблема "Хагани" – єврейської організації самооборони</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 9: Економічні реформи -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Економічні реформи Бен-Гуріона</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">💰 Ключові економічні ініціативи</div>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="list-item">Націоналізація ключових галузей економіки</div>
+                        <div class="list-item">Створення державних підприємств</div>
+                        <div class="list-item">Розвиток сільського господарства через кібуци</div>
+                    </div>
+                    <div class="column">
+                        <div class="list-item">Будівництво Національного водогону</div>
+                        <div class="list-item">Залучення іноземних інвестицій</div>
+                        <div class="list-item">Розвиток промисловості та технологій</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/National_Water_Carrier_of_Israel_map.svg/800px-National_Water_Carrier_of_Israel_map.svg.png" alt="Національний водогін">
+                <div class="image-caption">Національний водогін Ізраїлю – один з найважливіших проектів Бен-Гуріона</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 10: Соціальні реформи -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Соціальні реформи та освіта</div>
+            </div>
+            <div class="two-column">
+                <div class="column">
+                    <div class="content-section">
+                        <div class="content-title">🏥 Соціальна політика</div>
+                        <div class="list-item">Створення системи соціального забезпечення</div>
+                        <div class="list-item">Безкоштовна медицина для всіх громадян</div>
+                        <div class="list-item">Державна підтримка сім'ї та дітей</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content-section">
+                        <div class="content-title">🎓 Освітні реформи</div>
+                        <div class="list-item">Введення обов'язкової шкільної освіти</div>
+                        <div class="list-item">Створення Єврейського університету в Єрусалимі</div>
+                        <div class="list-item">Розвиток Техніону</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hebrew_University_of_Jerusalem.jpg/800px-Hebrew_University_of_Jerusalem.jpg" alt="Єврейський університет">
+                <div class="image-caption">Єврейський університет в Єрусалимі</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 11: Зовнішня політика -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Зовнішня політика Ізраїлю за Бен-Гуріона</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">🌍 Основні напрямки зовнішньої політики</div>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="list-item">Встановлення дипломатичних відносин із країнами Заходу</div>
+                        <div class="list-item">Співпраця зі США та Європейськими країнами</div>
+                        <div class="list-item">Членство в ООН (з 1949 року)</div>
+                    </div>
+                    <div class="column">
+                        <div class="list-item">Відносини з арабськими країнами</div>
+                        <div class="list-item">Підтримка єврейських громад у діаспорі</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">📅 Ключові події</div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1949 рік</div>
+                        <div class="timeline-content">Вступ Ізраїлю до ООН</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1956 рік</div>
+                        <div class="timeline-content">Сuez'ка криза</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1962 рік</div>
+                        <div class="timeline-content">Встановлення відносин з ФРН</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/UN_General_Assembly_1949.jpg/800px-UN_General_Assembly_1949.jpg" alt="Ізраїль в ООН">
+                <div class="image-caption">Ізраїль стає членом ООН у 1949 році</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 12: Війна за незалежність -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Війна за незалежність Ізраїлю (1948-1949)</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">⚔️ Основні етапи війни</div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">15 травня 1948</div>
+                        <div class="timeline-content">Вторгнення армій арабських країн</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">11 червня 1948</div>
+                        <div class="timeline-content">Перше перемир'я під егідою ООН</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">20 липня 1949</div>
+                        <div class="timeline-content">Підписання угоди про перемир'я з Сирією</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">📊 Результати війни</div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">6,000+</div>
+                        <div class="stat-label">Загиблих ізраїльтян</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">21,000</div>
+                        <div class="stat-label">км² території</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/1948_Arab-Israeli_War_map.svg/800px-1948_Arab-Israeli_War_map.svg.png" alt="Карта війни">
+                <div class="image-caption">Карта основних боїв Війни за незалежність (1948-1949)</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 13: Особисте життя -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Особисте життя Давида Бен-Гуріона</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">👨‍👩‍👧‍👦 Сім'я</div>
+                <div class="content-text">
+                    Давид Бен-Гуріон був одружений з Паулою Бен-Гуріон з 1917 року. 
+                    У них було троє дітей: Геула, Амор і Ренана.
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">📚 Захоплення</div>
+                <div class="list-item">Читання</div>
+                <div class="list-item">Фізична праця</div>
+                <div class="list-item">Йога та медитація</div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/David_Ben-Gurion_with_family.jpg/800px-David_Ben-Gurion_with_family.jpg" alt="Бен-Гуріон з сім'єю">
+                <div class="image-caption">Давид Бен-Гуріон з дружиною Паулою та онуками</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 14: Пам'ятні місця -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Пам'ятні місця, пов'язані з Бен-Гуріоном</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">🏛️ Музеї та меморіали</div>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="list-item">Меморіальний центр в Сде-Бокері</div>
+                        <div class="list-item">Будинок Бен-Гуріона в Тель-Авіві</div>
+                    </div>
+                    <div class="column">
+                        <div class="list-item">Університет Бен-Гуріона в Беер-Шеві</div>
+                        <div class="list-item">Могила Бен-Гуріона в Сде-Бокері</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Ben-Gurion_House_Tel_Aviv.jpg/800px-Ben-Gurion_House_Tel_Aviv.jpg" alt="Будинок Бен-Гуріона">
+                <div class="image-caption">Будинок Бен-Гуріона в Тель-Авіві – нині музей</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 15: Сучасна спадщина -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Спадщина Бен-Гуріона у сучасному світі</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">🌍 Вплив на сучасний Ізраїль</div>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="list-item">Політична система Ізраїлю</div>
+                        <div class="list-item">Потужна армія</div>
+                        <div class="list-item">Розвинута економіка</div>
+                    </div>
+                    <div class="column">
+                        <div class="list-item">Система освіти</div>
+                        <div class="list-item">Кібуцний рух</div>
+                        <div class="list-item">Національна ідентичність</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">📈 Сучасні досягнення Ізраїлю</div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value">$500B+</div>
+                        <div class="stat-label">ВВП Ізраїлю (2024)</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">9.7M</div>
+                        <div class="stat-label">Населення Ізраїлю</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">#1</div>
+                        <div class="stat-label">Країна за стартапами</div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Tel_Aviv_skyline_2020.jpg/800px-Tel_Aviv_skyline_2020.jpg" alt="Сучасний Тель-Авів">
+                <div class="image-caption">Сучасний Тель-Авів – економічний центр Ізраїлю</div>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 16: Порівняння з іншими лідерами -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Порівняння Бен-Гуріона з іншими лідерами</div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">🔄 Порівняльна таблиця</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Лідер</th>
+                            <th>Країна</th>
+                            <th>Період</th>
+                            <th>Основний внесок</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Давид Бен-Гуріон</td>
+                            <td>Ізраїль</td>
+                            <td>1948-1963</td>
+                            <td>Створення держави</td>
+                        </tr>
+                        <tr>
+                            <td>Махатма Ганді</td>
+                            <td>Індія</td>
+                            <td>1915-1948</td>
+                            <td>Ненасильницька боротьба</td>
+                        </tr>
+                        <tr>
+                            <td>Нельсон Мандела</td>
+                            <td>ПАР</td>
+                            <td>1994-1999</td>
+                            <td>Ліквідація апартеїду</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content-section">
+                <div class="content-title">💡 Унікальність Бен-Гуріона</div>
+                <div class="list-item">Створив державу "з нуля" на території без державності протягом 2000 років</div>
+                <div class="list-item">Поєднав політичне керівництво з військовою стратегією</div>
+                <div class="list-item">Забезпечив виживання країни в умовах постійної загрози</div>
+            </div>
+            <div class="image-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/World_leaders_1960s.jpg/800px-World_leaders_1960s.jpg" alt="Світові лідери">
+                <div class="image-caption">Давид Бен-Гуріон серед світових лідерів 1960-х років</div>
+            </div>
+        </div>
+
+<!-- СЛАЙД 17: Висновки -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Висновки</div>
+            </div>
+            <div class="conclusion-title">Відповідно до завдань дослідження</div>
+            <div class="content-section">
+                <div class="content-title">1️⃣ Біографія Давида Бен-Гуріона</div>
+                <div class="content-text">
+                    Давид Бен-Гуріон пройшов шлях від простого сільськогосподарського робітника до лідера нації. 
+                    Його життя було присвячено ідеї створення єврейської держави, яку він втілював через 
+                    практичну діяльність, політичне керівництво та військову організацію.
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">2️⃣ Політичні ідеї</div>
+                <div class="content-text">
+                    Політична філософія Бен-Гуріона поєднувала сіонізм, соціалізм та практичний підхід до 
+                    державотворення. Він вірив у можливість мирного співіснування з арабами, але 
+                    розумів необхідність військової сили для захисту єврейських інтересів.
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">3️⃣ Роль у створенні Ізраїлю</div>
+                <div class="content-text">
+                    Бен-Гуріон зіграв вирішальну роль у проголошенні незалежності Ізраїлю 14 травня 1948 року. 
+                    Його керівництво у ході Війни за незалежність забезпечило виживання нової держави 
+                    та закріплення її території.
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">4️⃣ Державотворча діяльність</div>
+                <div class="content-text">
+                    Як перший прем'єр-міністр, Бен-Гуріон закладав основи ізраїльської держави: 
+                    створив державні інститути, організував масову імміграцію, розвивав економіку 
+                    та освіту, забезпечував міжнародне визнання Ізраїлю.
+                </div>
+            </div>
+            <div class="content-section">
+                <div class="content-title">5️⃣ Спадщина</div>
+                <div class="content-text">
+                    Спадщина Давида Бен-Гуріона жива в сучасному Ізраїлі. Його ім'я асоціюється зі 
+                    створенням держави, розвитком Негева, формуванням національної ідентичності. 
+                    Він назавжди залишився в історії як «Батько нації» – людина, яка перетворила мрію 
+                    про єврейську державу у реальність.
+                </div>
+            </div>
+            <div class="highlight">
+                <strong>Давид Бен-Гуріон – це символ перемоги волі над обставинами, 
+                ідеалізму над практицизмом, надії над відчаєм.</strong>
+            </div>
+        </div>
+
+        <!-- СЛАЙД 18: Список джерел (ДСТУ 8302:2015) -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-title">Список використаних джерел</div>
+                <div class="slide-subtitle">Оформлено відповідно до ДСТУ 8302:2015</div>
+            </div>
+            <div class="sources">
+                <div style="counter-reset: source-counter;"></div>
+                <div class="content-title">Електронні ресурси</div>
+                <div class="source-item">
+                    Давид Бен-Гуріон [Електронний ресурс]. – Режим доступу: 
+                    <a href="https://uk.wikipedia.org/wiki/%D0%94%D0%B0%D0%B2%D1%96%D0%B4_%D0%91%D0%B5%D0%BD-%D0%93%D1%83%D1%80%D1%96%D0%BE%D0%BD">https://uk.wikipedia.org/wiki/Давид_Бен-Гуріон</a> 
+                    (дата звернення: 10.11.2024). – Назва з екрана.
+                </div>
+                <div class="source-item">
+                    Біографія Давида Бен-Гуріона [Електронний ресурс] // Jewish Virtual Library. – 
+                    Режим доступу: <a href="https://www.jewishvirtuallibrary.org/david-ben-gurion">https://www.jewishvirtuallibrary.org/david-ben-gurion</a> 
+                    (дата звернення: 10.11.2024). – Назва з екрана.
+                </div>
+                <div class="source-item">
+                    Декларація незалежності Ізраїлю [Електронний ресурс]. – Режим доступу: 
+                    <a href="https://mfa.gov.il/mfa/foreignpolicy/peace/guide/pages/declaration%20of%20establishment%20of%20state%20of%20israel.aspx">https://mfa.gov.il/mfa/foreignpolicy/peace/guide/pages/declaration</a> 
+                    (дата звернення: 10.11.2024). – Назва з екрана.
+                </div>
+                <div class="source-item">
+                    План ООН щодо поділу Палестини (Резолюція 181) [Електронний ресурс]. – 
+                    Режим доступу: 
+                    <a href="https://www.un.org/unispal/document/auto-insert-181479/">https://www.un.org/unispal/document/auto-insert-181479/</a> 
+                    (дата звернення: 10.11.2024). – Назва з екрана.
+                </div>
+                <div class="source-item">
+                    Ben-Gurion University of the Negev [Електронний ресурс]. – 
+                    Режим доступу: <a href="https://in.bgu.ac.il/en/Pages/default.aspx">https://in.bgu.ac.il/en/Pages/default.aspx</a> 
+                    (дата звернення: 10.11.2024). – Назва з екрана.
+                </div>
+                <div class="content-title" style="margin-top: 30px;">Книги та монографії</div>
+                <div class="source-item">
+                    Бен-Гуріон Д. Мемуари / Давид Бен-Гуріон ; пер. з івр. – Тель-Авів : Ам Овед, 1971. – 856 с.
+                </div>
+                <div class="source-item">
+                    Лакуер В. Історія сіонізму / Вальтер Лакуер ; пер. з англ. – Київ : Дух і літера, 2004. – 432 с.
+                </div>
+                <div class="source-item">
+                    Сакер Д. Історія держави Ізраїль / Дональд Сакер ; пер. з англ. – Москва : Алгоритм, 2013. – 384 с.
+                </div>
+                <div class="source-item">
+                    Шлайн С. Д. Палестина у XX столітті: історія конфлікту / Стенлі Д. Шлайн. – Київ : К.І.С., 2005. – 288 с.
+                </div>
+                <div class="content-title" style="margin-top: 30px;">Нормативні документи</div>
+                <div class="source-item">
+                    ДСТУ 8302:2015. Бібліографічний опис. Скорочений опис. – Чинний від 2016-07-01. – Київ : Держспоживстандарт України, 2015. – 24 с.
+                </div>
+            </div>
+            <div class="author-info" style="margin-top: 40px; font-size: 0.9em;">
+                Укладач: Клімович Олег, студент 4 курсу, групи Ist1-B23<br>
+                Дата складання: листопад 2024 року
+            </div>
+        </div>
+    </div>
+</body>
+</html>
